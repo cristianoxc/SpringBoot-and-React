@@ -4,25 +4,25 @@ import com.cristianoxc.dsvendas.entities.Seller;
 
 public class SaleSumDTO {
 	
-	private String sallerName;
+	private String sellerName;
 	private Double sum;
 	
 	public SaleSumDTO() {
 	}
 
-	// tem que passar o Saller no contrutor para ser usado no postgree
+	// tem que passar o Seller no contrutor para ser usado no postgree
 	// ele nao aceita se passar agrupar se passar somente o sallerName
 	public SaleSumDTO(Seller seller, Double sum) {
-		this.sallerName = seller.getName();
+		this.sellerName = seller.getName();
 		this.sum = sum;
 	}
 
-	public String getSallerName() {
-		return sallerName;
+	public String getSellerName() {
+		return sellerName;
 	}
 
-	public void setSallerName(String sallerName) {
-		this.sallerName = sallerName;
+	public void setSellerName(String sellerName) {
+		this.sellerName = sellerName;
 	}
 
 	public Double getSum() {
